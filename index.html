@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      background-color: #88766d;
+      padding: 10px;
+      margin: 50px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #212529;
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    #main-nav {
+      background-color: #224C5A;
+    }
+
+    #first_jumbotron {
+      background-image: url("https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/public/field/field_image_main/College-UG-index.jpg?itok=h2wqWff5");
+      background-size: 100% 100%;
+      height: 400px;
+    }
+
+    .nav-link:hover {
+      color: rgb(192, 227, 231) !important;
+    }
+  </style>
+  <title>First Bootstrap Web Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="first_jumbotron" class="jumbotron text-center" style="margin-bottom:0"></div>
+
+  <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#attendance">Attendance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#grades">Grades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div id="grades" class="container-fluid">
+    <h1>Students Grades</h1>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or
+      <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+    <div class="grid-container">
+      <div class="grid-item">Student ID</div>
+      <div class="grid-item">Student Name</div>
+      <div class="grid-item">Student Year</div>
+      <div class="grid-item">Student GPA</div>
+      <div class="grid-item">Letter Grade</div>
+      <div class="grid-item">65985</div>
+      <div class="grid-item">John Adams</div>
+      <div class="grid-item">3rd</div>
+      <div class="grid-item">3.2</div>
+      <div class="grid-item">3.0</div>
+      <div class="grid-item">65854</div>
+      <div class="grid-item">Sarah Green</div>
+      <div class="grid-item">2nd</div>
+      <div class="grid-item">2.5</div>
+      <div class="grid-item">2.7</div>
+      <div class="grid-item">65878</div>
+      <div class="grid-item">Robert Murray</div>
+      <div class="grid-item">2nd</div>
+      <div class="grid-item">2.1</div>
+      <div class="grid-item">2.3</div>
+      <div class="grid-item">65254</div>
+      <div class="grid-item">Tom Willis</div>
+      <div class="grid-item">4th</div>
+      <div class="grid-item">3.8</div>
+      <div class="grid-item">3.6</div>
+    </div>
+  </div>
+  <br>
+  <div id="attendance" class="container-fluid">
+    <h1>Students Attendance</h1>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or
+      <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+    <div class="flex-container">
+      <div>65985</div>
+      <div>attend</div>
+      <div>65854</div>
+      <div>attend</div>
+      <div>65878</div>
+      <div>attend</div>
+      <div>65254</div>
+      <div>absent</div>
+    </div>
+    <br>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <p>While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. </p>
+      <p>Copyright 1999-2019 by Refsnes Data. All Rights Reserved.</p>
+    </div>
+
+
+</body>
+
+</html>
